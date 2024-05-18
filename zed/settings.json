@@ -1,0 +1,52 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "theme": "Everforest Dark",
+  "ui_font_family": "Hack Nerd Font",
+  "buffer_font_family": "Hack Nerd Font",
+  "buffer_font_size": 14,
+  "tab_size": 4,
+  "relative_line_numbers": true,
+  "autosave": "on_window_change",
+  "language_overrides": {
+    "JavaScript": {
+      "tab_size": 2
+    },
+    "TypeScript": {
+      "tab_size": 2
+    },
+    "Vue.js": {
+      "tab_size": 2
+    },
+    "TSX": {
+      "tab_size": 2
+    }
+  },
+  "languages": {
+    "JavaScript": {
+      // "code_actions_on_format": {
+      //   "source.fixAll.eslint": true
+      // }
+      "format_on_save": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "TypeScript": {
+      "format_on_save": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    }
+  }
+}

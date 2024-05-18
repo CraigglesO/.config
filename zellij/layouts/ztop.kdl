@@ -1,0 +1,17 @@
+layout {
+    default_tab_template {
+        children
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+    }
+    pane_template name="ztop" {
+        command "ztop"
+    }
+    tab name="data" cwd="~/Documents/Data/" {
+        ztop name="ZTOP"
+    }
+}

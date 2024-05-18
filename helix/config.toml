@@ -1,0 +1,112 @@
+theme = "everforest_moist"
+
+[editor]
+line-number = "relative"
+mouse = true
+auto-format = true
+scrolloff = 5
+shell = ["zsh", "-c"]
+bufferline = "multiple"
+popup-border = "all"
+color-modes = true
+true-color = true
+
+[editor.lsp]
+display-inlay-hints = true
+display-messages = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = [
+    "mode",
+    "spinner",
+    "file-name"
+]
+center = ["version-control"]
+right = [
+    "diagnostics",
+    "selections",
+    "total-line-numbers",
+    "position",
+    "position-percentage",
+    "file-encoding",
+    "file-type"
+]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 15
+max-indent-retain = 20
+
+[editor.indent-guides]
+render = true
+character = "│"
+skip-levels = 1
+
+[editor.whitespace.render]
+space = "none"
+tab = "none"
+nbsp = "none"
+nnbsp = "none"
+newline = "all"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+newline = "⏎"
+tabpad = "·" # Tabs will look like "→···" (depending on tab width)
+
+[keys.normal]
+X = "select_line_above"
+x = "select_line_below"
+"ret" = ["open_below"] # Maps the enter key to open_below then re-enter normal mode
+"esc" = ["collapse_selection", "keep_primary_selection"]
+
+[keys.normal.g]
+b = [
+    "goto_next_paragraph",
+    "collapse_selection"
+]
+B = [
+    "goto_prev_paragraph",
+    "collapse_selection",
+    "move_visual_line_up"
+]
+
+[keys.normal.space]
+q = ":quit"
+w = ":write"
+i = ":toggle lsp.display-inlay-hints"
+"." = ":toggle-option file-picker.git-ignore" # toggle seeing files hidden with the .gitignore in file pickers
+t = ":sh zellij run -c -f -n 'FILE PICKER' --height '80%' --width '80%' --x '10%' --y '10%' -- ~/.config/helix/scripts/yazi.sh" # open yazi file tree
+# Add comma to the end of the line
+"," = [
+    "save_selection",
+    "goto_line_end",
+    ":append-output echo ','",
+    "collapse_selection",
+    "delete_selection",
+    "jump_backward",
+]
+# Add semicolumn to the end of the line
+";" = [
+    "save_selection",
+    "goto_line_end",
+    ":append-output echo ';'",
+    "collapse_selection",
+    "delete_selection",
+    "jump_backward",
+]
+

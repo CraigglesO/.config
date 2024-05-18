@@ -1,0 +1,35 @@
+layout {
+    default_tab_template {
+        children
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+    }
+    pane_template name="data" {
+        cwd "~/Documents/Data/"
+        command "bun"
+        args "serve"
+
+    }
+    pane_template name="dev" {
+        command "bun"
+        args "dev"
+    }
+    pane_template name="yazi" {
+        command "~/.config/zellij/scripts/yazi.sh"
+    }
+    tab name="s2maps-gpu" cwd="~/Documents/Projects/OpenS2/opens2.com" {
+        pane split_direction="vertical" {
+            yazi name="S2 Maps GPU" focus=true size="68%"
+            pane split_direction="horizontal" {
+                data name="DATA"
+                dev name="DEVELOP"
+                children
+            }
+        }
+    }
+}
+

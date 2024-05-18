@@ -1,0 +1,17 @@
+asciinema
+Autodesk
+configstore
+gh
+gh-copilot
+github-copilot
+gitui
+nvimChad
+nvimOld
+nvimMini
+qBittorent
+spotify-tui
+# Ignore everything in the zed folder
+zed/*
+# But do not ignore zed/settings.json
+!zed/settings.json
+v-analyzer
