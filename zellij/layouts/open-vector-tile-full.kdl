@@ -117,25 +117,35 @@ layout {
             }
         }
     }
-    pane_template name="nvim" {
-        command "nvim"
+
+    pane_template name="typescript" {
+        command "bun"
+        args "run" "test"
     }
     pane_template name="bacon" {
         command "bacon"
         args "test"
     }
-    tab name="Leetcode" cwd="~/Documents/Projects/rust/leetcode" {
+    pane_template name="nvim" {
+        command "nvim"
+    }
+
+    tab name="OVT" cwd="~/Documents/Projects/OpenS2/open-vector-tile" {
         pane split_direction="vertical" {
-            nvim name="CODE" focus=true size="68%"
+            pane split_direction="horizontal" size="68%" stacked=true {
+                nvim name="CODE" focus=true expanded=true
+                pane name="TERMINAL"
+            }
             pane split_direction="horizontal" {
-                bacon name="BACON"
-                pane name="TERM"
+                typescript name="TYPESCRIPT"
+                bacon name="RUST"
                 children
             }
         }
     }
+
     swap_tiled_layout name="Single" {
-        tab name="PBF" {
+        tab name="OVT" {
             pane split_direction="horizontal" stacked=true {
                 pane
                 pane

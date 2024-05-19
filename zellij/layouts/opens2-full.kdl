@@ -117,25 +117,38 @@ layout {
             }
         }
     }
+
+    pane_template name="data" {
+        cwd "~/Documents/Data/"
+        command "bun"
+        args "serve"
+
+    }
+
+    pane_template name="dev" {
+        command "bun"
+        args "dev"
+    }
     pane_template name="nvim" {
         command "nvim"
     }
-    pane_template name="bacon" {
-        command "bacon"
-        args "test"
-    }
-    tab name="Leetcode" cwd="~/Documents/Projects/rust/leetcode" {
+
+    tab name="opens2.com" cwd="~/Documents/Projects/OpenS2/opens2.com" {
         pane split_direction="vertical" {
-            nvim name="CODE" focus=true size="68%"
+            pane split_direction="horizontal" size="68%" stacked=true {
+                nvim name="CODE" focus=true expanded=true
+                pane name="TERMINAL"
+            }
             pane split_direction="horizontal" {
-                bacon name="BACON"
-                pane name="TERM"
+                data name="DATA"
+                dev name="DEVELOP"
                 children
             }
         }
     }
+
     swap_tiled_layout name="Single" {
-        tab name="PBF" {
+        tab name="opens2.com" {
             pane split_direction="horizontal" stacked=true {
                 pane
                 pane
@@ -144,3 +157,4 @@ layout {
         }
     }
 }
+
