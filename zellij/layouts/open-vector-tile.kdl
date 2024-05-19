@@ -110,7 +110,7 @@ layout {
                 // the command that should be executed
                 command_spotify_command "zsh /Users/craigoconnor/.config/zellij/scripts/spotfiy.sh"
                 // themeing and format of the command
-                command_spotify_format "#[fg=#4a555b,bg=#a7c080,bold]{stdout}"
+                command_spotify_format "#[fg=#4a555b,bg=#a7c080,bold]{stdout} "
                 // interval in seconds, between two command runs
                 command_spotify_interval "10" // ten seconds
                 command_spotify_rendermode "dynamic"

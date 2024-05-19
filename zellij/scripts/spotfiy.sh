@@ -71,28 +71,27 @@ showProgress() {
     duration=$(getDurationSeconds)
     position=$(getPositionSeconds)
     progress=$(echo "scale=4; $position / $duration" | bc)
+    progressInt=$(echo "($progress * 16) / 1" | bc)
 
-    if (( $(echo "$progress >= 0.935" | bc -l) )); then
-        echo "██"
-    elif (( $(echo "$progress >= 0.875" | bc -l) )); then
-        echo "█▉"
-    elif (( $(echo "$progress >= 0.75" | bc -l) )); then
-        echo "█▊"
-    elif (( $(echo "$progress >= 0.625" | bc -l) )); then
-        echo "█▋"
-    elif (( $(echo "$progress >= 0.5" | bc -l) )); then
-        echo "█▌"
-    elif (( $(echo "$progress >= 0.375" | bc -l) )); then
-        echo "█▍"
-    elif (( $(echo "$progress >= 0.25" | bc -l) )); then
-        echo "█▎"
-    elif (( $(echo "$progress >= 0.125" | bc -l) )); then
-        echo "█▏"
-    elif (( $(echo "$progress > 0" | bc -l) )); then
-        echo "█ "
-    else
-        echo "  "
-    fi
+    case $progressInt in
+        16) echo "██" ;;
+        15) echo "█▉" ;;
+        14) echo "█▊" ;;
+        13) echo "█▋" ;;
+        12) echo "█▌" ;;
+        11) echo "█▍" ;;
+        10) echo "█▎" ;;
+        9)  echo "█▏" ;;
+        8)  echo "█ " ;;
+        7)  echo "▉ " ;;
+        6)  echo "▊ " ;;
+        5)  echo "▋ " ;;
+        4)  echo "▌ " ;;
+        3)  echo "▍ " ;;
+        2)  echo "▎ " ;;
+        1)  echo "▏ " ;;
+        *)  echo "  " ;;
+    esac
 }
 
 showStatus () {
