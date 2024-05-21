@@ -102,7 +102,8 @@ scrollback_editor "/opt/local/bin/hx"
 
 // auto_layout false
 
-theme "everforest-dark-medium"
+// theme "everforest-dark-medium"
+theme "catppuccin-frappe"
 
 // window {
 //     option_as_alt "Both"

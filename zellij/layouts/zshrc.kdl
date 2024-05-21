@@ -5,29 +5,29 @@ layout {
         pane size=1 borderless=true {
             plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
                 // weather
-                format_left "#[fg=#4a555b,bg=#7fbbb3,bold] {command_weather}#[fg=#7fbbb3]"
+                format_left "#[fg=#49507a,bg=#89b4fa,bold] {command_weather}#[fg=#89b4fa]"
                 format_center "{mode}"
                 // DATE
-                format_right  "#[fg=#d3c6aa]{datetime}#[bg=#d3c6aa]"
+                format_right  "#[fg=#f5e0dc]{datetime}#[bg=#f5e0dc]"
                 format_space ""
 
                 border_enabled  "false"
                 border_char     "─"
-                border_format   "#[fg=#a7c080]{char}"
+                border_format   "#[fg=#a6e3a1]{char}"
                 border_position "bottom"
 
-                mode_normal "#[fg=#4a555b]#[bg=#4a555b]  #[fg=#dbbc7f,bg=#4a555b]#[fg=#4a555b,bg=#dbbc7f,bold] G#[fg=#dbbc7f,bg=#4a555b]#[bg=#4a555b]  #[fg=#dbbc7f,bg=#4a555b]#[fg=#4a555b,bg=#dbbc7f,bold] P#[fg=#dbbc7f,bg=#4a555b]#[bg=#4a555b]  #[fg=#dbbc7f,bg=#4a555b]#[fg=#4a555b,bg=#dbbc7f,bold]󰓩 T#[fg=#dbbc7f,bg=#4a555b]#[bg=#4a555b]  #[fg=#dbbc7f,bg=#4a555b]#[fg=#4a555b,bg=#dbbc7f,bold]󰉿 N#[fg=#dbbc7f,bg=#4a555b]#[bg=#4a555b]  #[fg=#dbbc7f,bg=#4a555b]#[fg=#4a555b,bg=#dbbc7f,bold] H#[fg=#dbbc7f,bg=#4a555b]#[bg=#4a555b]  #[fg=#dbbc7f,bg=#4a555b]#[fg=#4a555b,bg=#dbbc7f,bold] S#[fg=#dbbc7f,bg=#4a555b]#[bg=#4a555b]  #[fg=#dbbc7f,bg=#4a555b]#[fg=#4a555b,bg=#dbbc7f,bold] O#[fg=#dbbc7f,bg=#4a555b]#[bg=#4a555b]  #[fg=#dbbc7f,bg=#4a555b]#[fg=#4a555b,bg=#dbbc7f,bold] Q#[fg=#dbbc7f,bg=#4a555b]#[bg=#4a555b]  #[fg=#7fbbb3,bg=#4a555b]#[fg=#4a555b,bg=#7fbbb3,bold]󰯍 []#[fg=#7fbbb3,bg=#4a555b]#[bg=#4a555b]  #[fg=#4a555b]"
-                mode_locked "#[fg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold] G#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#4a555b]"
-                mode_session "#[fg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰋮  D#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]  W#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰄲  ENTER#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#4a555b]"
-                mode_resize "#[fg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰩨  +|-#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󱍬      #[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󱍩  HJKL#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰄲  ENTER#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#4a555b]"
-                mode_pane "#[fg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]  N#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]J   K#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]H  L#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰑕  C#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰼫  F#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰉧  W#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]  E#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰄲  ENTER#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]  X#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#4a555b]"
-                mode_tab "#[fg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]  N#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]J   K#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰑕  R#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󱍸  S#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰋮  B#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰔡  TAB#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰄲  ENTER#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]  X#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#4a555b]"
-                mode_scroll "#[fg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]  S#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰠽  U#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰧩  D#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰑕  E#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰄲  ENTER#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#4a555b]"
-                mode_enter_search "#[fg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰄲  ENTER#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#4a555b]"
-                mode_search "#[fg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰠽  U#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰧩  D#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰒮  N#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰒭  P#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]  W#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰬶  C#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]  O#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰄲  ENTER#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#4a555b]"
-                mode_rename_tab "#[fg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]J   K#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰄲  ENTER#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#4a555b]"
-                mode_rename_pane "#[fg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]J   K#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]󰄲  ENTER#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#4a555b]"
-                mode_move "#[fg=#4a555b]#[bg=#4a555b]  #[fg=#d699b6,bg=#4a555b]#[fg=#4a555b,bg=#d699b6,bold]J   K#[fg=#d699b6,bg=#4a555b]#[bg=#4a555b]  #[fg=#4a555b]"
+                mode_normal "#[fg=#49507a]#[bg=#49507a]  #[fg=#f9e2af,bg=#49507a]#[fg=#49507a,bg=#f9e2af,bold] G#[fg=#f9e2af,bg=#49507a]#[bg=#49507a]  #[fg=#f9e2af,bg=#49507a]#[fg=#49507a,bg=#f9e2af,bold] P#[fg=#f9e2af,bg=#49507a]#[bg=#49507a]  #[fg=#f9e2af,bg=#49507a]#[fg=#49507a,bg=#f9e2af,bold]󰓩 T#[fg=#f9e2af,bg=#49507a]#[bg=#49507a]  #[fg=#f9e2af,bg=#49507a]#[fg=#49507a,bg=#f9e2af,bold]󰉿 N#[fg=#f9e2af,bg=#49507a]#[bg=#49507a]  #[fg=#f9e2af,bg=#49507a]#[fg=#49507a,bg=#f9e2af,bold] H#[fg=#f9e2af,bg=#49507a]#[bg=#49507a]  #[fg=#f9e2af,bg=#49507a]#[fg=#49507a,bg=#f9e2af,bold] S#[fg=#f9e2af,bg=#49507a]#[bg=#49507a]  #[fg=#f9e2af,bg=#49507a]#[fg=#49507a,bg=#f9e2af,bold] O#[fg=#f9e2af,bg=#49507a]#[bg=#49507a]  #[fg=#f9e2af,bg=#49507a]#[fg=#49507a,bg=#f9e2af,bold] Q#[fg=#f9e2af,bg=#49507a]#[bg=#49507a]  #[fg=#89b4fa,bg=#49507a]#[fg=#49507a,bg=#89b4fa,bold]󰯍 []#[fg=#89b4fa,bg=#49507a]#[bg=#49507a]  #[fg=#49507a]"
+                mode_locked "#[fg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold] G#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#49507a]"
+                mode_session "#[fg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰋮  D#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]  W#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰄲  ENTER#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#49507a]"
+                mode_resize "#[fg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰩨  +|-#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󱍬      #[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󱍩  HJKL#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰄲  ENTER#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#49507a]"
+                mode_pane "#[fg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]  N#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]J   K#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]H  L#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰑕  C#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰼫  F#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰉧  W#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]  E#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰄲  ENTER#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]  X#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#49507a]"
+                mode_tab "#[fg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]  N#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]J   K#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰑕  R#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󱍸  S#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰋮  B#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰔡  TAB#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰄲  ENTER#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]  X#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#49507a]"
+                mode_scroll "#[fg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]  S#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰠽  U#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰧩  D#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰑕  E#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰄲  ENTER#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#49507a]"
+                mode_enter_search "#[fg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰄲  ENTER#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#49507a]"
+                mode_search "#[fg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰠽  U#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰧩  D#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰒮  N#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰒭  P#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]  W#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰬶  C#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]  O#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰄲  ENTER#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#49507a]"
+                mode_rename_tab "#[fg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]J   K#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰄲  ENTER#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#49507a]"
+                mode_rename_pane "#[fg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]J   K#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]󰄲  ENTER#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#49507a]"
+                mode_move "#[fg=#49507a]#[bg=#49507a]  #[fg=#f5c2e7,bg=#49507a]#[fg=#49507a,bg=#f5c2e7,bold]J   K#[fg=#f5c2e7,bg=#49507a]#[bg=#49507a]  #[fg=#49507a]"
                 mode_prompt ""
                 mode_tmux ""
                 mode_default_to_mode "normal"
@@ -58,7 +58,7 @@ layout {
                 command_weather_interval "10800" // three hours
                 command_weather_rendermode "raw"
 
-                datetime "#[fg=#4a555b,bg=#d3c6aa,bold] 󱑆 {format} "
+                datetime "#[fg=#49507a,bg=#f5e0dc,bold] 󱑆 {format} "
                 datetime_format "%A, %d %b %Y %H:%M"
                 datetime_timezone "America/Denver"
             }
@@ -66,51 +66,51 @@ layout {
         // TAB BAR
         pane size=1 borderless=true {
             plugin location="file:~/.config/zellij/plugins/zjstatus.wasm" {
-                format_left "{mode} #[fg=#d3c6aa,bold] {session}"
-                format_center "#[fg=#4a555b]#[bg=#4a555b]  {tabs}#[bg=#4a555b]  #[fg=#4a555b]"
+                format_left "{mode} #[fg=#f5e0dc,bold] {session}"
+                format_center "#[fg=#49507a]#[bg=#49507a]  {tabs}#[bg=#49507a]  #[fg=#49507a]"
                 // lets keep git and notifications off for now
                 // Spotify
-                format_right "#[fg=#a7c080]#[fg=#4a555b,bg=#a7c080,bold] 󰓇  {command_spotify}"
+                format_right "#[fg=#a6e3a1]#[fg=#49507a,bg=#a6e3a1,bold] 󰓇  {command_spotify}"
                 format_space  ""
 
                 border_enabled  "false"
                 border_char     "─"
-                border_format   "#[fg=#a7c080]{char}"
+                border_format   "#[fg=#a6e3a1]{char}"
                 border_position "top"
 
                 hide_frame_for_single_pane "true"
 
-                mode_normal "#[fg=#a7c080,bg=#4a555b,bold]  UNLOCKED#[fg=#4a555b]"
-                mode_locked "#[fg=#4a555b,bg=#a7c080,bold]  LOCKED#[fg=#a7c080]"
-                mode_session "#[fg=#d3c6aa,bg=#d6494d,bold]  {name}#[fg=#d6494d]"
-                mode_resize "#[fg=#4a555b,bg=#dbbc7f,bold] 󰉿 {name}#[fg=#dbbc7f]"
-                mode_pane "[fg=#4a555b,bg=#7fbbb3,bold]  {name}#[fg=#7fbbb3]"
-                mode_tab "#[fg=#4a555b,bg=#d699b6,bold] 󰓩 {name}#[fg=#d699b6]"
-                mode_scroll "#[fg=#4a555b,bg=#dbbc7f,bold] 󱕒 {name}#[fg=#dbbc7f]"
-                mode_enter_search "#[fg=#4a555b,bg=#e69875,bold]  {name}#[fg=#e69875]"
-                mode_search "#[fg=#4a555b,bg=#e69875,bold]  {name}#[fg=#e69875]"
-                mode_rename_tab "#[fg=#4a555b,bg=#d699b6,bold] 󰑕 {name}#[fg=#d699b6]"
-                mode_rename_pane "#[fg=#4a555b,bg=#d699b6,bold]  {name}#[fg=#d699b6]"
-                mode_move "#[fg=#d3c6aa,bg=#d6494d,bold]  {name}#[fg=#d6494d]"
-                mode_prompt "#[fg=#4a555b,bg=#a7c080,bold]  {name}#[fg=#a7c080]"
-                mode_tmux "#[fg=#4a555b,bg=#a7c080,bold]  {name}#[fg=#a7c080]"
+                mode_normal "#[fg=#a6e3a1,bg=#49507a,bold]  UNLOCKED#[fg=#49507a]"
+                mode_locked "#[fg=#49507a,bg=#a6e3a1,bold]  LOCKED#[fg=#a6e3a1]"
+                mode_session "#[fg=#f5e0dc,bg=#f38ba8,bold]  {name}#[fg=#f38ba8]"
+                mode_resize "#[fg=#49507a,bg=#f9e2af,bold] 󰉿 {name}#[fg=#f9e2af]"
+                mode_pane "[fg=#49507a,bg=#89b4fa,bold]  {name}#[fg=#89b4fa]"
+                mode_tab "#[fg=#49507a,bg=#f5c2e7,bold] 󰓩 {name}#[fg=#f5c2e7]"
+                mode_scroll "#[fg=#49507a,bg=#f9e2af,bold] 󱕒 {name}#[fg=#f9e2af]"
+                mode_enter_search "#[fg=#49507a,bg=#fab387,bold]  {name}#[fg=#fab387]"
+                mode_search "#[fg=#49507a,bg=#fab387,bold]  {name}#[fg=#fab387]"
+                mode_rename_tab "#[fg=#49507a,bg=#f5c2e7,bold] 󰑕 {name}#[fg=#f5c2e7]"
+                mode_rename_pane "#[fg=#49507a,bg=#f5c2e7,bold]  {name}#[fg=#f5c2e7]"
+                mode_move "#[fg=#f5e0dc,bg=#f38ba8,bold]  {name}#[fg=#f38ba8]"
+                mode_prompt "#[fg=#49507a,bg=#a6e3a1,bold]  {name}#[fg=#a6e3a1]"
+                mode_tmux "#[fg=#49507a,bg=#a6e3a1,bold]  {name}#[fg=#a6e3a1]"
                 mode_default_to_mode "normal"
 
-                tab_normal "#[fg=#d3c6aa,bg=#4a555b]#[fg=#4a555b,bg=#d3c6aa,bold]{name}#[fg=#d3c6aa,bg=#4a555b]"
-                tab_normal_fullscreen "#[fg=#d3c6aa,bg=#4a555b]#[fg=#4a555b,bg=#d3c6aa,bold]{name}  #[fg=#d3c6aa,bg=#4a555b]"
-                tab_normal_sync "#[fg=#d3c6aa,bg=#4a555b]#[fg=#4a555b,bg=#d3c6aa,bold]{name}  #[fg=#d3c6aa,bg=#4a555b]"
+                tab_normal "#[fg=#f5e0dc,bg=#49507a]#[fg=#49507a,bg=#f5e0dc,bold]{name}#[fg=#f5e0dc,bg=#49507a]"
+                tab_normal_fullscreen "#[fg=#f5e0dc,bg=#49507a]#[fg=#49507a,bg=#f5e0dc,bold]{name}  #[fg=#f5e0dc,bg=#49507a]"
+                tab_normal_sync "#[fg=#f5e0dc,bg=#49507a]#[fg=#49507a,bg=#f5e0dc,bold]{name}  #[fg=#f5e0dc,bg=#49507a]"
 
-                tab_active "#[fg=#a7c080,bg=#4a555b]#[fg=#4a555b,bg=#a7c080,bold]{name}#[fg=#a7c080,bg=#4a555b]"
-                tab_active_fullscreen "#[fg=#a7c080,bg=#4a555b]#[fg=#4a555b,bg=#a7c080,bold]{name}  #[fg=#a7c080,bg=#4a555b]"
-                tab_active_sync "#[fg=#a7c080,bg=#4a555b]#[fg=#4a555b,bg=#a7c080,bold]{name}  #[fg=#a7c080,bg=#4a555b]"
+                tab_active "#[fg=#a6e3a1,bg=#49507a]#[fg=#49507a,bg=#a6e3a1,bold]{name}#[fg=#a6e3a1,bg=#49507a]"
+                tab_active_fullscreen "#[fg=#a6e3a1,bg=#49507a]#[fg=#49507a,bg=#a6e3a1,bold]{name}  #[fg=#a6e3a1,bg=#49507a]"
+                tab_active_sync "#[fg=#a6e3a1,bg=#49507a]#[fg=#49507a,bg=#a6e3a1,bold]{name}  #[fg=#a6e3a1,bg=#49507a]"
 
-                tab_separator "#[fg=4a555b,bg=#4a555b] "
+                tab_separator "#[fg=49507a,bg=#49507a] "
 
                 // SPOTIFY
                 // the command that should be executed
                 command_spotify_command "zsh /Users/craigoconnor/.config/zellij/scripts/spotfiy.sh"
                 // themeing and format of the command
-                command_spotify_format "#[fg=#4a555b,bg=#a7c080,bold]{stdout} "
+                command_spotify_format "#[fg=#49507a,bg=#a6e3a1,bold]{stdout} "
                 // interval in seconds, between two command runs
                 command_spotify_interval "10" // ten seconds
                 command_spotify_rendermode "dynamic"

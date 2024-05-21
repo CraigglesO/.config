@@ -1,4 +1,4 @@
-import = ["/Users/craigoconnor/.config/alacritty/tesselate.toml"]
+import = ["/Users/craigoconnor/.config/alacritty/catppuccin-frappe.toml"]
 live_config_reload = true
 
 [bell]

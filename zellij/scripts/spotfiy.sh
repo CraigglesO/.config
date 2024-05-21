@@ -71,26 +71,34 @@ showProgress() {
     duration=$(getDurationSeconds)
     position=$(getPositionSeconds)
     progress=$(echo "scale=4; $position / $duration" | bc)
-    progressInt=$(echo "($progress * 16) / 1" | bc)
+    progressInt=$(echo "($progress * 24) / 1" | bc)
 
     case $progressInt in
-        16) echo "██" ;;
-        15) echo "█▉" ;;
-        14) echo "█▊" ;;
-        13) echo "█▋" ;;
-        12) echo "█▌" ;;
-        11) echo "█▍" ;;
-        10) echo "█▎" ;;
-        9)  echo "█▏" ;;
-        8)  echo "█ " ;;
-        7)  echo "▉ " ;;
-        6)  echo "▊ " ;;
-        5)  echo "▋ " ;;
-        4)  echo "▌ " ;;
-        3)  echo "▍ " ;;
-        2)  echo "▎ " ;;
-        1)  echo "▏ " ;;
-        *)  echo "  " ;;
+        24) echo "███" ;;
+        23) echo "██▉" ;;
+        22) echo "██▊" ;;
+        21) echo "██▋" ;;
+        20) echo "██▌" ;;
+        19) echo "██▍" ;;
+        18) echo "██▎" ;;
+        17) echo "██▏" ;;
+        16) echo "██ " ;;
+        15) echo "█▉ " ;;
+        14) echo "█▊ " ;;
+        13) echo "█▋ " ;;
+        12) echo "█▌ " ;;
+        11) echo "█▍ " ;;
+        10) echo "█▎ " ;;
+        9)  echo "█▏ " ;;
+        8)  echo "█  " ;;
+        7)  echo "▉  " ;;
+        6)  echo "▊  " ;;
+        5)  echo "▋  " ;;
+        4)  echo "▌  " ;;
+        3)  echo "▍  " ;;
+        2)  echo "▎  " ;;
+        1)  echo "▏  " ;;
+        *)  echo "   " ;;
     esac
 }
 
@@ -111,7 +119,7 @@ showStatusMini() {
         progress=$(showProgress)
         artist=$(showArtist)
         track=$(showTrack)
-        statusLine="#[fg=#e69875,bg=#4a555b,bold]$progress#[fg=#4a555b,bg=#a7c080,bold] $artist  $track"
+        statusLine="#[fg=#f38ba8,bg=#49507a,bold]$progress#[fg=#49507a,bg=#a6e3a1,bold] $artist  $track"
         # statusLine="$progress $artist - $track"
         
         # Truncate if longer than 35 characters

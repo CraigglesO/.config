@@ -1,5 +1,5 @@
 themes:              
-  everforest-dark-medium:           
+  everforest-dark-medium:
     fg: "#d3c6aa"    
     bg: "#2f383e"    
     black: "#4a555b" 
@@ -11,4 +11,3 @@ themes:
     cyan: "#83c092"  
     white: "#a7c080" 
     orange: "#e69875"
-
