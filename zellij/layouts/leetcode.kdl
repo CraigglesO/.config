@@ -117,8 +117,29 @@ layout {
             }
         }
     }
-    pane_template name="nvim" {
-        command "nvim"
+    // pane_template name="nvim" {
+    //     command "nvim"
+    // }
+    // pane_template name="bacon" {
+    //     command "bacon"
+    //     args "test"
+    // }
+    // tab name="Leetcode" cwd="~/Documents/Projects/rust/leetcode" {
+    //     pane split_direction="vertical" {
+    //         nvim name="CODE" focus=true size="68%"
+    //         pane split_direction="horizontal" {
+    //             bacon name="BACON"
+    //             pane name="TERM"
+    //             children
+    //         }
+    //     }
+    // }
+    // pane_template name="yazi" {
+    //     command "~/.config/zellij/scripts/yazi.sh"
+    // }
+    pane_template name="helix" {
+        command "hx"
+        args "."
     }
     pane_template name="bacon" {
         command "bacon"
@@ -126,7 +147,7 @@ layout {
     }
     tab name="Leetcode" cwd="~/Documents/Projects/rust/leetcode" {
         pane split_direction="vertical" {
-            nvim name="CODE" focus=true size="68%"
+            helix name="CODE" focus=true size="68%"
             pane split_direction="horizontal" {
                 bacon name="BACON"
                 pane name="TERM"
@@ -135,7 +156,7 @@ layout {
         }
     }
     swap_tiled_layout name="Single" {
-        tab name="PBF" {
+        tab name="Leetcode" {
             pane split_direction="horizontal" stacked=true {
                 pane
                 pane

@@ -3,6 +3,7 @@ theme = "everforest_moist"
 [editor]
 line-number = "relative"
 mouse = true
+middle-click-paste = true
 auto-format = true
 scrolloff = 5
 shell = ["zsh", "-c"]
@@ -73,6 +74,10 @@ X = "select_line_above"
 x = "select_line_below"
 "ret" = ["open_below"] # Maps the enter key to open_below then re-enter normal mode
 "esc" = ["collapse_selection", "keep_primary_selection"]
+# Move line down
+C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+# Move line up
+C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
 
 [keys.normal.g]
 b = [

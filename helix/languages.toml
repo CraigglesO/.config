@@ -31,7 +31,7 @@ inlayHints.typeHints.hideClosureInitialization = false
 command = "deno"
 args = ["run", "--allow-net","--allow-env", "https://raw.githubusercontent.com/sigmaSd/helix-gpt/0.31-deno/src/app.ts"]
 # HANDLER can be set to openai/copilot/codeium
-environment = { HANDLER="codeium" }
+environment = { HANDLER="codeium", CODEIUM_API_KEY="7a766920-d460-47e9-8aae-530234851bca" }
 
 [language-server.eslint]
 command = "vscode-eslint-language-server"
