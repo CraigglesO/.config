@@ -118,32 +118,7 @@ layout {
         }
     }
 
-    pane_template name="nvim" {
-        command "nvim"
-    }
-    pane_template name="bacon" {
-        command "bacon"
-        args "test"
-    }
-
-    tab name="PBF" cwd="~/Documents/Projects/rust/pbf" {
-        pane split_direction="vertical" {
-            nvim name="CODE" focus=true size="68%"
-            pane split_direction="horizontal" {
-                bacon name="BACON"
-                pane name="TERM"
-                children
-            }
-        }
-    }
-
-    swap_tiled_layout name="Single" {
-        tab name="PBF" {
-            pane split_direction="horizontal" stacked=true {
-                pane
-                pane
-                pane
-            }
-        }
+    tab name="PBF" cwd="~/Documents/Projects/OpenS2/pbf" {
+        pane name="Protobuf"
     }
 }

@@ -1,5 +1,4 @@
 
-
        .
        ###x.        .|
        d#####x,   ,v||
@@ -18,8 +17,6 @@
                  Welcome to the Helix tutorial!
         Press the j key until you reach the introduction.
 
-
-
 =================================================================
 =                        INTRODUCTION                           =
 =================================================================
@@ -34,13 +31,6 @@
  use of Helix's modal editing features. To begin, ensure your
  CapsLock key is not pressed and hold the j key until you reach
  the first lesson.
-
-
-
-
-
-
-
 
 =================================================================
 =                  1.1 BASIC CURSOR MOVEMENT                    =
@@ -58,12 +48,6 @@
  will be using. Try moving around to get a feel for hjkl.
  Once you're ready, hold j to continue to the next lesson.
 
-
-
-
-
-
-
 =================================================================
 =                      1.2 EXITING HELIX                        =
 =================================================================
@@ -80,12 +64,6 @@
 
  Now, move on to the next lesson.
 
-
-
-
-
-
-
 =================================================================
 =                         1.3 DELETION                          =
 =================================================================
@@ -100,13 +78,6 @@
      This sentence has extra characters.
 
  Once the sentence is correct, move on to the next lesson.
-
-
-
-
-
-
-
 
 =================================================================
 =                       1.4 INSERT MODE                         =
@@ -127,9 +98,6 @@
  Note: The status bar will display your current mode.
        Notice that when you type i, 'NOR' changes to 'INS'.
 
-
-
-
 =================================================================
 =                      1.5 SAVING A FILE                        =
 =================================================================
@@ -145,34 +113,28 @@
 
  You can also type wq or write-quit to save and exit.
 
- Note: You can optionally enter a filepath after the w / write
+ Note: You can optionally enter a file path after the w / write
        command in order to save to that path.
  Note: If there are any unsaved changes to a file, a plus [+]
        will appear next to the file name in the status bar.
-
-
 
 =================================================================
 =                        CHAPTER 1 RECAP                        =
 =================================================================
 
- * Use the h,j,k,l keys to move the cursor.
+* Use the h,j,k,l keys to move the cursor.
 
- * Type : to enter Command mode.
-   * The q / quit and q! / quit! commands will exit Helix. The
+* Type : to enter Command mode.
+  * The q / quit and q! / quit! commands will exit Helix. The
      former fails when there are unsaved changes. The latter
      discards them.
-   * The w / write command will save the file.
-   * The wq / write-quit command will do both.
+  * The w / write command will save the file.
+  * The wq / write-quit command will do both.
 
- * Type d to delete the character at the cursor.
+* Type d to delete the character at the cursor.
 
- * Type i to enter Insert mode and type text. Press Escape to
+* Type i to enter Insert mode and type text. Press Escape to
    return to Normal mode.
-
-
-
-
 
 =================================================================
 =                   2.1 MORE INSERT COMMANDS                    =
@@ -208,37 +170,18 @@
 
  --> What is the best editor?
 
-
-
-
-
-
-
-
-
-
-
 =================================================================
 =                        CHAPTER 2 RECAP                        =
 =================================================================
 
- * Type a to append to the selection.
+* Type a to append to the selection.
 
- * Type I to enter Insert mode at the first non-whitespace
+* Type I to enter Insert mode at the first non-whitespace
    character at the start of a line.
 
- * Type A to enter Insert mode at the end of a line.
+* Type A to enter Insert mode at the end of a line.
 
- * Use o and O to open lines below and above the cursor respectively.
-
-
-
-
-
-
-
-
-
+* Use o and O to open lines below and above the cursor respectively.
 
 =================================================================
 =                  3.1 MOTIONS AND SELECTIONS                   =
@@ -258,9 +201,6 @@
 
  --> This sentence pencil has vacuum extra words in the it.
      This sentence has extra words in it.
-
-
-
 
 =================================================================
 =                     3.2 MORE MOTIONS                          =
@@ -305,7 +245,6 @@
 
 --> Helix is a one-of-a-kind "modal" text editor
 
-
 =================================================================
 =                    3.4 THE CHANGE COMMAND                     =
 =================================================================
@@ -325,9 +264,6 @@
  --> This paper has heavy words behind it.
      This sentence has incorrect words in it.
 
-
-
-
 =================================================================
 =                   3.5 COUNTS WITH MOTIONS                     =
 =================================================================
@@ -341,14 +277,6 @@
  5. Try the above with different numbers.
 
  --> This is just a line with words you can move around in.
-
-
-
-
-
-
-
-
 
 =================================================================
 =                    3.6 SELECT / EXTEND MODE                   =
@@ -366,11 +294,6 @@
  4. Move to the B of BAZ and repeat the sequence to delete them.
 
  --> Remove the FOO BAR distracting words BAZ BIZ from this line.
-
-
-
-
-
 
 =================================================================
 =                     3.7 SELECTING LINES                       =
@@ -413,30 +336,27 @@
  Note: This works the same in Select mode.
  Note: Another related command is Alt-; which flips selections.
 
-
-
-
 =================================================================
 =                        CHAPTER 3 RECAP                        =
 =================================================================
 
- * Type w to select forward until the next word.
-   * Type e to select to the end of the current word.
-   * Type b to select backward to the start of the current word.
-   * Use uppercase counterparts, W,E,B, to traverse WORDS.
+* Type w to select forward until the next word.
+  * Type e to select to the end of the current word.
+  * Type b to select backward to the start of the current word.
+  * Use uppercase counterparts, W,E,B, to traverse WORDS.
 
- * Type d to delete the entire selection.
-   * Type c to delete the selection and enter Insert mode.
+* Type d to delete the entire selection.
+  * Type c to delete the selection and enter Insert mode.
 
- * Type a number before a motion to repeat it that many times.
+* Type a number before a motion to repeat it that many times.
 
- * Type v to enter Select mode, where all motions extend the
+* Type v to enter Select mode, where all motions extend the
    selection.
 
- * Type x to select the entire current line. Type x again to
+* Type x to select the entire current line. Type x again to
    select the next line.
 
- * Type semicolon ( ; ) to collapse selection.
+* Type semicolon ( ; ) to collapse selection.
 
 =================================================================
 =                         4.1 UNDOING                           =
@@ -452,13 +372,6 @@
  6. Type U (Shift-u) several times to redo your fixes.
 
  --> Fiix the errors on thhis line and reeplace them witth undo.
-
-
-
-
-
-
-
 
 =================================================================
 =                 4.2 COPYING AND PASTING TEXT                  =
@@ -502,29 +415,18 @@
  Note: Unlike Vim, ? doesn't change the search direction.
        N always goes backwards and n always goes forwards.
 
-
-
 =================================================================
 =                        CHAPTER 4 RECAP                        =
 =================================================================
 
- * Type u to undo. Type U to redo.
+* Type u to undo. Type U to redo.
 
- * Type y to yank (copy) text and p to paste.
-   * Use Space + y and Space + p to yank / paste on the system
+* Type y to yank (copy) text and p to paste.
+  * Use Space + y and Space + p to yank / paste on the system
      clipboard.
 
- * Type / to search forward in file, and ? to search backwards.
-   * Use n and N to cycle through search matches.
-
-
-
-
-
-
-
-
-
+* Type / to search forward in file, and ? to search backwards.
+  * Use n and N to cycle through search matches.
 
 =================================================================
 =                     5.1 MULTIPLE CURSORS                      =
@@ -567,9 +469,6 @@
  --> I like to eat apples since my favorite fruit is apples.
      I like to eat oranges since my favorite fruit is oranges.
 
-
-
-
 =================================================================
 =                    5.3 SELECTING VIA REGEX                    =
 =================================================================
@@ -590,7 +489,6 @@
        command is the way to do it. Select the text you want
        to replace in — type % to select the whole file — and
        then perform the steps explained above.
-
 
 =================================================================
 =                      5.4 ALIGN SELECTIONS                     =
@@ -627,36 +525,25 @@
 
     | FRUIT   | AMOUNT |
     |---------|--------|
+
  | Apples  | 8      |
     | Bananas | 6      |
   | Oranges | 3      |
      | Donuts  | 4      |
 
-
-
-
-
 =================================================================
 =                        CHAPTER 5 RECAP                        =
 =================================================================
 
- * Type C to duplicate the cursor to the next suitable line
+* Type C to duplicate the cursor to the next suitable line
    and Alt-C for previous suitable line.
 
- * Type s to select all instances of a regex pattern inside
+* Type s to select all instances of a regex pattern inside
    the current selection.
 
- * Type & to align selections.
+* Type & to align selections.
 
- * Press Alt-s to split the selection into lines.
-
-
-
-
-
-
-
-
+* Press Alt-s to split the selection into lines.
 
 =================================================================
 =                 6.1 SELECTING TO A CHARACTER                  =
@@ -691,16 +578,12 @@
  2. Type t| (Shift-\) to select the = separator.
  3. Type r- to replace the separator with dashes.
 
-
  | Month | Days |
  |=======|------|
  | Jan   | 31   |
  | Feb   | 28   |
  | Mar   | 31   |
  | ...   | ...  |
-
-
-
 
 =================================================================
 =                         6.3 REPETITION                        =
@@ -718,33 +601,17 @@
      insertions like changing words, or repeat selections like
      f / t.
 
-
-
-
-
-
-
 =================================================================
 =                        CHAPTER 6 RECAP                        =
 =================================================================
 
- * Type f / F to extend selection up to & including a character.
-   * Type t / T to extend selection until a character.
+* Type f / F to extend selection up to & including a character.
+  * Type t / T to extend selection until a character.
 
- * Type r to replace selected characters.
+* Type r to replace selected characters.
 
- * Type . to repeat the last insertion.
-   * Press Alt-. to repeat the last f / t selection.
-
-
-
-
-
-
-
-
-
-
+* Type . to repeat the last insertion.
+  * Press Alt-. to repeat the last f / t selection.
 
 =================================================================
 =                  7.1 REPLACE WITH YANKED TEXT                 =
@@ -757,16 +624,8 @@
  3. Select "oranges" with w.
  4. Type R to replace "oranges" with "watermelons"
 
-
  --> I like watermelons because oranges are refreshing.
      I like watermelons because watermelons are refreshing.
-
-
-
-
-
-
-
 
 =================================================================
 =                       7.2 JOINING LINES                       =
@@ -784,11 +643,6 @@ onto other
 lines.
 
      This sentence is spilling over onto other lines.
-
-
-
-
-
 
 =================================================================
 =                      7.3 INDENTING LINES                      =
@@ -808,10 +662,6 @@ lines.
      are indented
      much better.
 
-
-
-
-
 =================================================================
 =               7.4 INCREMENTING AND DECREMENTING               =
 =================================================================
@@ -830,31 +680,18 @@ lines.
  --> 3) Another point.
  --> 6) Last point.
 
-
-
-
-
 =================================================================
 =                        CHAPTER 7 RECAP                        =
 =================================================================
 
- * Type R to replace the selection with yanked text.
+* Type R to replace the selection with yanked text.
 
- * Type J to join lines in selection.
+* Type J to join lines in selection.
 
- * Type > and < to indent / unindent lines.
+* Type > and < to indent / unindent lines.
 
- * Press Ctrl-a to increment the selected number.
-   * Press Ctrl-x to decrement the selected number.
-
-
-
-
-
-
-
-
-
+* Press Ctrl-a to increment the selected number.
+  * Press Ctrl-x to decrement the selected number.
 
 =================================================================
 =                         8.1 REGISTERS                         =
@@ -876,7 +713,6 @@ lines.
 
  --> I like watermelons and bananas because my favorite fruits
      are mangoes and pineapples.
-
 
 =================================================================
 =                          8.2 MACROS                           =
@@ -904,23 +740,12 @@ lines.
 =                        CHAPTER 8 RECAP                        =
 =================================================================
 
- * Type " to select a different register.
+* Type " to select a different register.
 
- * Type Q to start and stop recording a macro to a register,
+* Type Q to start and stop recording a macro to a register,
    the default being @.
 
- * Type q to replay a macro from @ or the selected register.
-
-
-
-
-
-
-
-
-
-
-
+* Type q to replay a macro from @ or the selected register.
 
 =================================================================
 =                  9.1 SEARCHING FOR SELECTIONS                 =
@@ -962,10 +787,6 @@ lines.
  --> because a cat's the only bat
  --> who knows where it's at.
 
-
-
-
-
 =================================================================
 =                     9.3 USING THE JUMPLIST                    =
 =================================================================
@@ -984,31 +805,43 @@ lines.
  2. Move far away in the file.
  3. Press Ctrl-o (just once!) to come back to where you saved.
 
+=================================================================
+=             9.4 JUMP WITH TWO-CHARACTER LABELS                =
+=================================================================
 
+ Type gw to enable the 2-character labels. The start of each word
+ will be replaced by 2 highlighted characters. Type any sequence
+ of 2 highlighted characters to jump to the corresponding label,
+ or use ESC to drop the labels.
 
+ The 2-character labels allow you to quickly jump to any location
+ in the viewable selection.
 
+ 1. Move the cursor to the start of the line marked '-->' below.
+ 2. Press gw to enable the 2-character labels, and then the two
+    characters that replace the two letters he at the start of
+    here to jump to the corresponding word.
+
+ --> This is just a simple line of text.
+     There may be many such lines
+     But you really want to jump here!
+     This is fast with the 2-character labels.
 
 =================================================================
 =                        CHAPTER 9 RECAP                        =
 =================================================================
 
- * Type * to set the search register to the primary selection.
+* Type * to set the search register to the primary selection.
 
- * Type n / N in Select mode to add selections on each search
+* Type n / N in Select mode to add selections on each search
    match.
 
- * Press Ctrl-s to save position to the jumplist.
-   * Press Ctrl-i and Ctrl-o to go forward and backward in the
+* Press Ctrl-s to save position to the jumplist.
+  * Press Ctrl-i and Ctrl-o to go forward and backward in the
      jumplist.
 
-
-
-
-
-
-
-
-
+* Type gw to enable 2-character labels, and any 2 characters to
+   jump to the corresponding label, or ESC to drop the labels.
 
 =================================================================
 =             10.1 CYCLING AND REMOVING SELECTIONS              =
@@ -1022,15 +855,12 @@ lines.
  1. Move the cursor to the line marked '-->' below.
  2. Select both lines with xx or 2x.
  3. Type s to select, type "would" and enter.
- 4. Use ( and ) to cycle the primary selection and remove the
-    very second "would" with Alt-, .
+ 4. Use ( and ) to cycle the primary selection and deselect
+    the second "would" with Alt-, .
  5. Type c "wood" to change the remaining "would"s to "wood".
 
  --> How much would would a wouldchuck chuck
  --> if a wouldchuck could chuck would?
-
-
-
 
 =================================================================
 =             10.2 CYCLING THE CONTENT OF SELECTIONS            =
@@ -1047,19 +877,12 @@ lines.
  --> Jumping through the water,
  --> daring to know.
 
-
-
-
-
-
-
-
 =================================================================
 =                     10.3 CHANGING CASE                        =
 =================================================================
 
  Type ~ to switch the case of all selected letters.
- Type ` to set all selected letters to lowercase.
+ Type `to set all selected letters to lowercase.
  Press Alt-` to set all selected letters to uppercase.
 
  1. Move the cursor to the first line marked '-->' below.
@@ -1096,425 +919,354 @@ lines.
 these are sentences. some sentences don't start with uppercase
 letters! that is not good grammar. you can fix this.
 
-
-
 =================================================================
 =                        CHAPTER 10 RECAP                       =
 =================================================================
 
- * Use ) and ( to cycle the primary selection back and forward
+* Use ) and ( to cycle the primary selection back and forward
    through selections respectively.
-   * Press Alt-, to remove the primary selection.
-   * Press Alt-) and Alt-( to cycle the content of the selections.
+  * Press Alt-, to remove the primary selection.
+  * Press Alt-) and Alt-( to cycle the content of the selections.
 
- * Type ~ to alternate case of selected letters.
-   * Use ` and Alt-` to set the case of selected letters to
+* Type ~ to alternate case of selected letters.
+  * Use `and Alt-` to set the case of selected letters to
      lower and upper respectively.
 
- * Type S to split selections on regex.
-
-
-
-
-
-
-
+* Type S to split selections on regex.
 
 =================================================================
 =                     11.1 COMMENTING A LINE                    =
 =================================================================
 
-Press Ctrl-c to comment the line under your cursor.
-To uncomment the line, press Ctrl-c again.
+ Press Ctrl-c to comment the line under your cursor.
+ To uncomment the line, press Ctrl-c again.
 
-1. Move your cursor to the line marked '-->' below.
-2. Now comment the line marked with '-->'.
-3. Now try uncommenting the line.
+ 1. Move your cursor to the line marked '-->' below.
+ 2. Now comment the line marked with '-->'.
+ 3. Now try uncommenting the line.
 
---> Comment me please
-
-
-
-
-
-
-
-
-
+ --> Comment me please
 
 =================================================================
 =                 11.2 COMMENTING MULTIPLE LINES                =
 =================================================================
 
-Using the selections and multi-cursor functionality, you can
-comment multiple lines as long as it is under the selection or
-cursors.
+ Using the selections and multi-cursor functionality, you can
+ comment multiple lines as long as it is under the selection or
+ cursors.
 
-1. Move your cursor to the line marked with '-->' below.
-2. Now try to select or add more cursors the other lines marked
-   with '-->'.
-3. Comment those lines.
+ 1. Move your cursor to the line marked with '-->' below.
+ 2. Now try to select or add more cursors the other lines marked
+    with '-->'.
+ 3. Comment those lines.
 
---> How many are you going to comment?
---> Is this enough for a comment?
---> What are you doing?!
---> Stop commenting me!
---> AAAAaargh!!!
+ --> How many are you going to comment?
+ --> Is this enough for a comment?
+ --> What are you doing?!
+ --> Stop commenting me!
+ --> AAAAaargh!!!
 
-Note: If there are already commented lines under selections or
-multiple cursors, they won't be uncommented but commented again.
+ Note: If there are already commented lines under selections or
+ multiple cursors, they won't be uncommented but commented again.
 
 =================================================================
 =                       CHAPTER 11 RECAP                        =
 =================================================================
 
- * Use Ctrl-c to comment a line under your cursor. Press Ctrl-c
+* Use Ctrl-c to comment a line under your cursor. Press Ctrl-c
    again to uncomment.
- * To comment multiple lines, use the selections
+* To comment multiple lines, use the selections
    and multi-cursors before typing Ctrl-c.
-   * Commented lines cannot be uncommented but commented again.
-
-
-
-
-
-
-
-
-
-
-
-
+  * Commented lines cannot be uncommented but commented again.
 
 =================================================================
 =                   12.1 USING MATCH MODE JUMP                  =
 =================================================================
 
-To switch to match mode from normal mode, type m. This feature
-is particularly useful for handling bracket pairs and their
-contents.
+ To switch to match mode from normal mode, type m. This feature
+ is particularly useful for handling bracket pairs and their
+ contents.
 
-There are several actions that can be performed in match mode,
-as indicated by the help pop-up. To jump to a matching bracket pair,
-simply press mm. For example on the lines below (starting with
--->), move the cursor in normal mode to (, and then press mm to jump
-to the matching ). You can do the same on the line below: for example
-move to ], and press mm to jump to [ .
+ There are several actions that can be performed in match mode,
+ as indicated by the help pop-up. To jump to a matching bracket pair,
+ simply press mm. For example on the lines below (starting with
+ -->), move the cursor in normal mode to (, and then press mm to jump
+ to the matching ). You can do the same on the line below: for example
+ move to ], and press mm to jump to [ .
 
---> you can (jump between matching parenthesis)
---> or between matching [ square brackets ]
---> now { you know the drill: this works with brackets too }
-
-
-
+ --> you can (jump between matching parentheses)
+ --> or between matching [ square brackets ]
+ --> now { you know the drill: this works with brackets too }
 
 =================================================================
 =              12.2 USING MATCH MODE SELECT INSIDE              =
 =================================================================
 
-Match mode also lets you select the "inside" content between a
-pair of brackets or other delimiters. In the lines below:
+ Match mode also lets you select the "inside" content between a
+ pair of brackets or other delimiters. In the lines below:
 
-- move to the --> line, put your cursor in normal mode at any
-location between the parenthesis, for example at 'x', and press
-mi( or mi) to select the whole content inside the parenthesis
-(parenthesis excluded). As usual, you can then do anything you want
-with the selection (for example, press c to change it)
+* move to the --> line, put your cursor in normal mode at any
+ location between the parentheses, for example at 'x', and press
+ mi( or mi) to select the whole content inside the parentheses
+ (parentheses excluded). As usual, you can then do anything you want
+ with the selection (for example, press c to change it)
 
---> outside and (inside x parenthesis) - and outside again
+ --> outside and (inside x parentheses) - and outside again
 
-Test below that you can do the same with [], or {}, or with
-nested combinations of these (this will act on the immediately
-surrounding matching pair). This also works with "" and similar
+ Test below that you can do the same with [], or {}, or with
+ nested combinations of these (this will act on the immediately
+ surrounding matching pair). This also works with "" and similar
 
---> test [ with square brackets ] !
---> try ( with nested [ pairs of ( parenthesis) and "brackets" ])
+ --> test [ with square brackets ] !
+ --> try ( with nested [ pairs of ( parentheses) and "brackets" ])
 
 =================================================================
 =               12.3 USING MATCH MODE SELECT AROUND             =
 =================================================================
 
-You can also select the "around" content, i.e. both the inside
-content and the delimiters themselves, by using the ma select.
-For example, move to the line under, move your cursor in normal
-mode to any position between the (), and select the content of
-the (), including the surrounding (), by typing ma( or ma). As
-usual, you can do anything you want with the selection, for
-example delete it all with ma(d .
+ You can also select the "around" content, i.e. both the inside
+ content and the delimiters themselves, by using the ma select.
+ For example, move to the line under, move your cursor in normal
+ mode to any position between the (), and select the content of
+ the (), including the surrounding (), by typing ma( or ma). As
+ usual, you can do anything you want with the selection, for
+ example delete it all with ma(d .
 
---> you ( select x around ) to include delimiters in the select
+ --> you ( select x around ) to include delimiters in the select
 
-This naturally works with other delimiters too:
+ This naturally works with other delimiters too:
 
---> try [ with 'square' brackets ] too!
-
-
-
-
+ --> try [ with 'square' brackets ] too!
 
 =================================================================
 =                12.4 USING MATCH MODE SURROUND                 =
 =================================================================
 
-The match mode can also be used to add surrounding around the
-current selection. For example, move to the line below, then:
- * i) select the "select all of this" line segment (for example,
-move in normal mode the cursor to the start of select, then enter
-selection mode with v , then select the 4 next words with 4e ),
- * ii) press ms( or ms) to surround the selection with a pair of
-parenthesis.
+ The match mode can also be used to add surrounding around the
+ current selection. For example, move to the line below, then:
 
---> so, select all of this, and surround it with ()
+* i) select the "select all of this" line segment (for example,
+ move in normal mode the cursor to the start of select, then enter
+ selection mode with v , then select the 4 next words with 4e ),
+* ii) press ms( or ms) to surround the selection with a pair of
+ parentheses.
 
-You can do the same with other delimiters: for example, ms' on
-WORD below to surround it with a pair of ''. You can try also
-with adding a surrounding pair of "", or {}, or [].
+ --> so, select all of this, and surround it with ()
 
---> surround this WORD !
+ You can do the same with other delimiters: for example, ms' on
+ WORD below to surround it with a pair of ''. You can try also
+ with adding a surrounding pair of "", or {}, or [].
 
-
+ --> surround this WORD !
 
 =================================================================
 =              12.5 USING MATCH MODE DELETE SURROUND            =
 =================================================================
 
-You can delete surrounding pair of delimiters with the md
-command. On the line below, move the cursor anywhere
-within the pair of (), for example to the 'x', then from there,
-in normal mode, press md( or md) to delete the surrounding
-pair of parenthesis.
+ You can delete surrounding pair of delimiters with the md
+ command. On the line below, move the cursor anywhere
+ within the pair of (), for example to the 'x', then from there,
+ in normal mode, press md( or md) to delete the surrounding
+ pair of parentheses.
 
---> delete (the x pair of parenthesis) from within!
+ --> delete (the x pair of parentheses) from within!
 
-You can naturally delete other kinds of surroundings:
+ You can naturally delete other kinds of surroundings:
 
---> delete (nested [delimiters]): "this" will delete the nearest
-matching surrounding pair.
---> delete "layers "of" quote marks" too: this will delete the
-nearest previous and following quote marks
+ --> delete (nested [delimiters]): "this" will delete the nearest
+ matching surrounding pair.
+ --> delete "layers "of" quote marks" too: this will delete the
+ nearest previous and following quote marks
 
-Trying to delete unexisting surrounding delimiters print an error
-at the bottom bar and does nothing.
+ Trying to delete unexisting surrounding delimiters print an error
+ at the bottom bar and does nothing.
 
 =================================================================
 =             12.6 USING MATCH MODE REPLACE SURROUND            =
 =================================================================
 
-You can replace surrounding pairs of delimiters with the mr
-command. On the line below, move the cursor to
-anywhere within the pair of (), for example on the 'x', then in
-normal mode, press mr([ to replace the pair of () with a pair
-of [].
+ You can replace surrounding pairs of delimiters with the mr
+ command. On the line below, move the cursor to
+ anywhere within the pair of (), for example on the 'x', then in
+ normal mode, press mr([ to replace the pair of () with a pair
+ of [].
 
---> replace the (pair from x within), with something else
+ --> replace the (pair from x within), with something else
 
-This command will act on the closest enclosing pair, so you
-can try replacing different surrounding in the following:
+ This command will act on the closest enclosing pair, so you
+ can try replacing different surrounding in the following:
 
---> some (nested surroundings [can be replaced])
---> this "works with 'other surroundings' too"
+ --> some (nested surroundings [can be replaced])
+ --> this "works with 'other surroundings' too"
 
-You can try to replace a non existing pair: this will show
-an error warning at the bottom bar and do nothing.
-
+ You can try to replace a non existing pair: this will show
+ an error warning at the bottom bar and do nothing.
 
 =================================================================
 =                       CHAPTER 12 RECAP                        =
 =================================================================
 
-You can enter the match mode with the m key; this will show the
-actions available in a popup. This will allow you to:
- * jump to matching pair of delimiters with mm (you must have a
- delimiter belonging to a pair under your cursor)
- * select inside a pair of delimiters surrounding your cursor
- (i.e. select the content but not the delimiters) with mi(
- and similar
- * select around a pair of delimiters surrounding your cursor
- (i.e. select the content and the delimiters) with ma( and
- similar
- * delete surrounding delimiters with md( and similar
- * add surrounding delimiters around the selection with ms(
- * replace a pair of delimiters surrounding your selection with
- mr([ to replace for example surrounding () with []
+ You can enter the match mode with the m key; this will show the
+ actions available in a popup. This will allow you to:
 
-
-
+* jump to matching pair of delimiters with mm (you must have a
+  delimiter belonging to a pair under your cursor)
+* select inside a pair of delimiters surrounding your cursor
+  (i.e. select the content but not the delimiters) with mi(
+  and similar
+* select around a pair of delimiters surrounding your cursor
+  (i.e. select the content and the delimiters) with ma( and
+  similar
+* delete surrounding delimiters with md( and similar
+* add surrounding delimiters around the selection with ms(
+* replace a pair of delimiters surrounding your selection with
+  mr([ to replace for example surrounding () with []
 
 =================================================================
 =                CHAPTER 13.1 CREATE NEW SPLIT                  =
 =================================================================
 
-In Normal mode, press Ctrl-w to open the Window menu, which displays
-a list of available commands.
+ In Normal mode, press Ctrl-w to open the Window menu, which displays
+ a list of available commands.
 
-To open a new empty buffer in a vertical split on the right half
-of your current window, use Ctrl-w nv (i.e., press Ctrl
-and w simultaneously, then press n, followed by v). Your current
-window will now split in 2 vertically. A new empty buffer split
-will appear on the right half and your cursor will jump to the
-new vertical split.
+ To open a new empty buffer in a vertical split on the right half
+ of your current window, use Ctrl-w nv (i.e., press Ctrl
+ and w simultaneously, then press n, followed by v). Your current
+ window will now split in 2 vertically. A new empty buffer split
+ will appear on the right half and your cursor will jump to the
+ new vertical split.
 
-To create a new empty buffer in a horizontal split, press
-Ctrl-w ns. This action divides your current window into two
-horizontally, creates a new buffer, and moves your cursor to the
-new horizontal split.
-
-
-
+ To create a new empty buffer in a horizontal split, press
+ Ctrl-w ns. This action divides your current window into two
+ horizontally, creates a new buffer, and moves your cursor to the
+ new horizontal split.
 
 =================================================================
 =                CHAPTER 13.2 MOVE BETWEEN SPLITS               =
 =================================================================
 
-Use Ctrl-w k to move to the split above your current split. Use
-Ctrl-w j to move to the split below. Use Ctrl-w h to move to
-the split on the left and Ctrl-w l to move to the split on the
-right. To navigate to the next split (in the order they were
-opened), press Ctrl-w w.
+ Use Ctrl-w k to move to the split above your current split. Use
+ Ctrl-w j to move to the split below. Use Ctrl-w h to move to
+ the split on the left and Ctrl-w l to move to the split on the
+ right. To navigate to the next split (in the order they were
+ opened), press Ctrl-w w.
 
-You can now do whatever you want in your new buffers and splits.
-Once you are done with using your new buffer split,
-you can close it with Ctrl-w q . Move to the bottom right split
-with Ctrl-w l then Ctrl-w j, then press Ctrl-w q to close this
-specific split.
+ You can now do whatever you want in your new buffers and splits.
+ Once you are done with using your new buffer split,
+ you can close it with Ctrl-w q . Move to the bottom right split
+ with Ctrl-w l then Ctrl-w j, then press Ctrl-w q to close this
+ specific split.
 
-You can also close all splits except the current one with Ctrl-w o .
-Open a third vertical split with Ctrl-w nv , then move to the
-leftmost split with Ctrl-w h twice, then from inside the split on
-the left press Ctrl-w o to close all except this split.
-
+ You can also close all splits except the current one with Ctrl-w o .
+ Open a third vertical split with Ctrl-w nv , then move to the
+ leftmost split with Ctrl-w h twice, then from inside the split on
+ the left press Ctrl-w o to close all except this split.
 
 =================================================================
 =               CHAPTER 13.3 SPLIT CURRENT BUFFER               =
 =================================================================
 
-Use Ctrl-w s to split the view of the current buffer horizontally
-and Ctrl-w v to split it vertically with the buffer opened in both
-splits.
+ Use Ctrl-w s to split the view of the current buffer horizontally
+ and Ctrl-w v to split it vertically with the buffer opened in both
+ splits.
 
-Close extra splits with Ctrl-w o to return to a single window view.
-
-
-
-
-
-
-
-
-
-
-
-
+ Close extra splits with Ctrl-w o to return to a single window view.
 
 =================================================================
 =               CHAPTER 13.4 USE COMMANDS TO SPLIT              =
 =================================================================
 
-The :vsplit (or :vs for short) and :hsplit (or :hs) commands can
-also be used to split a specific buffer vertically or horizontally.
-For example, enter the command:
+ The :vsplit (or :vs for short) and :hsplit (or :hs) commands can
+ also be used to split a specific buffer vertically or horizontally.
+ For example, enter the command:
 
-:vs something
+ :vs something
 
-to open a new vertical split named "something" to the right. Here,
-"something" is not an existing file, so a new buffer with this name
-will open; however, you can replace "something" with any file name
-to open it in a new buffer. Similarly, you can enter the command:
+ to open a new vertical split named "something" to the right. Here,
+ "something" is not an existing file, so a new buffer with this name
+ will open; however, you can replace "something" with any file name
+ to open it in a new buffer. Similarly, you can enter the command:
 
-:hs some_more
+ :hs some_more
 
-to open a new buffer named "some_more" in the lower half.
-"some_more" could be any file or path to open this specific file
-or path instead of a new empty buffer.
-
+ to open a new buffer named "some_more" in the lower half.
+ "some_more" could be any file or path to open this specific file
+ or path instead of a new empty buffer.
 
 =================================================================
 =                  CHAPTER 13.5 SWAPPING SPLITS                 =
 =================================================================
 
-Open a split on the left with :vs hello1 and then a split below
-with :hs hello2.
+ Open a split on the left with :vs hello1 and then a split below
+ with :hs hello2.
 
-From hello2, press Ctrl-w K to swap it with the split above. Now
-hello2 is at the top while hello1 is at the bottom.
+ From hello2, press Ctrl-w K to swap it with the split above. Now
+ hello2 is at the top while hello1 is at the bottom.
 
-Still from hello2, press Ctrl-w H to swap with the split on the
-left: now hello2 is on the left and the tutor is on the top
-right. After Ctrl-w you can use HJKL to split with the buffer
-on the left / below / above / on the right.
+ Still from hello2, press Ctrl-w H to swap with the split on the
+ left: now hello2 is on the left and the tutor is on the top
+ right. After Ctrl-w you can use HJKL to swap with the buffer
+ on the left / below / above / on the right.
 
-Move back to the tutor split, and press Ctrl-w o to only keep
-this split.
-
-
-
-
+ Move back to the tutor split, and press Ctrl-w o to only keep
+ this split.
 
 =================================================================
 =                CHAPTER 13.6 TRANSPOSE SPLITS                  =
 =================================================================
 
-Open a split on the left with :vs hello1 and then a split below
-with :vs hello2.
+ Open a split on the left with :vs hello1 and then a split below
+ with :hs hello2.
 
-Move to the tutor split, then press Ctrl-w t to transpose the
-vertical split opened from this window: now, hello1 and
-hello2 are below, rather than to the right of, the tutor. Press
-Ctrl-w t again to transpose back.
+ Move to the tutor split, then press Ctrl-w t to transpose the
+ vertical split opened from this window: now, hello1 and
+ hello2 are below, rather than to the right of, the tutor. Press
+ Ctrl-w t again to transpose back.
 
-Move to the hello1 split, then press Ctrl-w t to transpose the
-horizontal split that was opened from this window: now hello2
-is on the right, rather than below, hello1. Press Ctrl-w t to
-transpose back.
+ Move to the hello1 split, then press Ctrl-w t to transpose the
+ horizontal split that was opened from this window: now hello2
+ is on the right, rather than below, hello1. Press Ctrl-w t to
+ transpose back.
 
-Move back to the tutor split and press Ctrl-w o to close all but
-the tutor window.
-
-
+ Move back to the tutor split and press Ctrl-w o to close all but
+ the tutor window.
 
 =================================================================
 =             CHAPTER 13.7 OPEN SPLIT FROM FILEPICKER           =
 =================================================================
 
-Splits can also be opened directly from the file picker. Press
-space f to open the file picker. From there, you can type in text
-to perform file lookup with fuzzy matching, and use the arrows
-up and down to move the selected file (indicated by the > symbol).
-If you want to exit the file picker, press Escape.
+ Splits can also be opened directly from the file picker. Press
+ space f to open the file picker. From there, you can type in text
+ to perform file lookup with fuzzy matching, and use the arrows
+ up and down to move the selected file (indicated by the > symbol).
+ If you want to exit the file picker, press Escape.
 
-Select any file you like in the file picker. You could open it in
-the current view by pressing enter (do not do this at present).
-But you can also open it in a new split. Press Ctrl-v to open
-the selected file in a new vertical split. Press space f again,
-select any file you want, and press Ctrl-s to open it in a
-horizontal split.
+ Select any file you like in the file picker. You could open it in
+ the current view by pressing enter (do not do this at present).
+ But you can also open it in a new split. Press Ctrl-v to open
+ the selected file in a new vertical split. Press space f again,
+ select any file you want, and press Ctrl-s to open it in a
+ horizontal split.
 
-Move back to the tutor split, and press Ctrl-w o to close all
-splits except this one.
-
-
+ Move back to the tutor split, and press Ctrl-w o to close all
+ splits except this one.
 
 =================================================================
 =                        CHAPTER 13 RECAP                       =
 =================================================================
 
-Splits can be used to display either the same buffer several times
-or several buffers. To access the main windows and splits commands,
-press Ctrl-w . You can move between splits with Ctrl-w hjkl ,
-you can close a split with Ctrl-w q , and you can close all but
-the present split with Ctrl-w o .
+ Splits can be used to display either the same buffer several times
+ or several buffers. To access the main windows and splits commands,
+ press Ctrl-w . You can move between splits with Ctrl-w hjkl ,
+ you can close a split with Ctrl-w q , and you can close all but
+ the present split with Ctrl-w o .
 
-Splits can also be opened by using the :vs FILENAME and
-:hs FILENAME commands.
+ Splits can also be opened by using the :vs FILENAME and
+ :hs FILENAME commands.
 
-Splits can also be used directly from the file pickers, by using
-Ctrl-v to open the file selected in a new vertical split, and
-Ctrl-s in a horizontal split.
-
-
-
-
-
+ Splits can also be used directly from the file pickers, by using
+ Ctrl-v to open the file selected in a new vertical split, and
+ Ctrl-s in a horizontal split.
 
 =================================================================
  This tutorial is still a work-in-progress.
